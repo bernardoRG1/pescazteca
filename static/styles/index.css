@@ -795,11 +795,20 @@ footer {
         text-align: center;
         font-size: 1rem;
         padding-bottom: 50px;
+     
     
+    }
+
+    #footer-icons {
+    
+        width: 80%;
+        justify-content: space-around;
     }
     .footer_contacto_social a {
         margin: 0;
         padding: 0;
+        font-size: 1.8rem;
+        margin: 0 15px;
     }
 
     .footer_logo {
