@@ -715,7 +715,7 @@ footer {
 @media (max-width: 550px) {
     
     .row-element , .education-container .education-first .row-element, .education-container .education-last .row-element, .salud-container .salud-last .row-element,     .salud-container .salud-first .row-element {
-        width: calc(100% - 10px);
+        width: calc(95% - 10px);
         margin-bottom: 20px;
     }
 
@@ -796,6 +796,10 @@ footer {
         font-size: 1rem;
         padding-bottom: 50px;
     
+    }
+    .footer_contacto_social a {
+        margin: 0;
+        padding: 0;
     }
 
     .footer_logo {
