@@ -70,6 +70,7 @@ body {
     color: #fff;
     font-size: 2rem;
     cursor: pointer;
+    
 }
 
 main {
@@ -306,6 +307,9 @@ header {
 .navbar_op_el_flag__img {
     width: 2.25rem;
     height: auto;
+    margin-right: 30px;
+    margin-top: 6px;
+    margin-left: 20px;
 }
 
 .hero {
@@ -427,7 +431,7 @@ header {
     font-weight: bold;
     font-size: 1.2rem;
     min-height: 140px; 
-    display: flex;
+    flex-direction: column;
     align-items: start;
     justify-content: center;
 }
@@ -789,8 +793,18 @@ footer {
     .otros-container .final-row p {
         max-width: 90%;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1rem;
+        padding-bottom: 50px;
     
+    }
+
+    .footer_logo {
+        margin: auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
     }
 
 
