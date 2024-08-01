@@ -167,7 +167,7 @@ header {
 .hero h1 {
     font-size: 6rem;
     font-weight: 900;
-    mix-blend-mode: overlay; /* using screen blend mode */
+    mix-blend-mode: overlay; 
 }
 
 .hero p {
@@ -234,7 +234,7 @@ header {
     width: 100%;
     margin: auto;
     display: flex;
-    align-items: flex-start; /* Cambiado de center a flex-start */
+    align-items: flex-start; 
     justify-content: space-between;
     border-bottom: 2px solid #eaeaea;
     flex-wrap: wrap;
@@ -262,7 +262,7 @@ header {
     font-weight: bold;
     font-size: 1.5rem;
     color: #0174bb;
-    min-height: 60px; /* Ajustar según sea necesario */
+    min-height: 60px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -273,7 +273,7 @@ header {
     font-family: "Manrope";
     font-weight: bold;
     font-size: 1.2rem;
-    min-height: 140px; /* Ajustar según sea necesario */
+    min-height: 140px; 
     display: flex;
     align-items: start;
     justify-content: center;
@@ -302,6 +302,8 @@ header {
 
 .salud-container .salud-first, .salud-container .salud-last {
     justify-content: center;
+    column-gap: 30px;
+    padding-bottom: 20px;
 }
 
 .salud-container .salud-first .row-element {
@@ -404,7 +406,7 @@ footer {
   
   [data-aos].aos-out {
     opacity: 0;
-    transform: translateY(20px); /* Adjust based on your preference */
+    transform: translateY(20px); 
   }
 
 
@@ -414,7 +416,7 @@ footer {
         bottom: -30px;
     }
 }
-/* Responsive styles */
+
 @media (max-width: 1479px) {
 
     .hero p {
@@ -489,7 +491,7 @@ footer {
     .hero h1 {
         font-size: 3rem;
         font-weight: 900;
-        mix-blend-mode: overlay; /* using screen blend mode */
+        mix-blend-mode: overlay; 
     }
     
     .hero p {
@@ -570,16 +572,25 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .hero p {
         margin-top: 30px;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
+
 
     .navbar_logo img {
         height: 80%;
+    }
+
+    .navbar .content {
+        justify-content: space-between;
+    }
+
+    .navbar .content a {
+       margin-left: 10px;
     }
 
     .title {
@@ -591,7 +602,7 @@ footer {
         height: 50px;
     }
 
-    .content {
+    .footer > .content {
         flex-direction: column;
         align-items: center;
         width: 100%;
