@@ -1,0 +1,628 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    top: 0;
+    overflow-x: hidden;
+
+}
+
+
+
+/* hero */
+
+main {
+    overflow-x: hidden;
+}
+header {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    margin-bottom: 100px;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/HEADERFINAL.webp");
+    background-position: center;    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Floating Menu */
+.floating {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+
+    height: auto;
+    transform: translateY(-100%);
+    transition: all 0.5s ease;
+}  
+.floating.active {
+    transform: translateY(0);
+}  
+.floating_link {
+
+    text-decoration: none;
+    display: block;
+    color: #ff0000;
+    font-size: 1.3rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    width: fit-content;
+}
+
+.floating_link:nth-child(8) {
+    background-color: #fff;
+    color: #4275b8;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.floating_social {
+    display: flex;
+}
+
+.floating_social__el {
+    margin-right: 0.8rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.floating_social__el:last-child {
+    margin-right: 0;
+}
+
+.floating_close {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+
+    margin: 20px auto;
+    width: 100%;
+    height: 5.5rem;
+    z-index: 3;
+}
+
+.navbar .content {
+
+    width: 97%;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_logo,
+.navbar_logo img {
+    height: 95%;
+    width: auto;
+    margin-left: 5px;
+}
+
+.navbar_op {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.navbar_op__el {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.13rem;
+    font-weight: 600;
+    margin-right: 1rem;
+    margin-top: -3px;
+}
+
+.navbar_op__el.active {
+    background-color: #fff;
+    color: #082349;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.navbar_op_menu {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar_op_menu i {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.navbar_op_el_flag__img {
+    width: 2.25rem;
+    height: auto;
+}
+
+.hero {
+    font-family: "Kumbh Sans", sans-serif;
+    position: absolute;
+    width: 100%;
+    margin: 130px auto;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    mix-blend-mode: overlay; /* using screen blend mode */
+}
+
+.hero p {
+    font-family: "Manrope";
+    font-weight: 400;
+    margin-top: -70px;
+    font-size: 2.3rem;
+}
+
+.wave {
+
+    margin-top: 40px;
+    position: absolute;
+    background-image: url("../images/WAVE\ \(1\).webp");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 150px;
+    bottom: -10px;
+
+}
+
+.restaurantes, .educacion, .deportes {
+    margin: auto;
+    width: 90%;
+}
+
+.title {
+    font-family: "Manrope";
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #0173bb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.restaurante-icon {
+    background-image: url("../images/restaurante-icon.jpg");
+}
+
+.deportes-icon {
+    background-image: url('../images/DEPORTES-ICON.webp');
+}
+
+.restaurantes-container {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.row {
+    padding-top: 30px;
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start; /* Cambiado de center a flex-start */
+    justify-content: space-between;
+    border-bottom: 2px solid #eaeaea;
+    flex-wrap: wrap;
+}
+
+.row-element {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 350px;
+}
+
+.row-element picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.element-title {
+    padding-top: 10px;
+    font-family: "Manrope";
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #0174bb;
+    min-height: 60px; /* Ajustar según sea necesario */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.element-desc {
+    margin-top: -15px;
+    font-family: "Manrope";
+    font-weight: bold;
+    font-size: 1.2rem;
+    min-height: 140px; /* Ajustar según sea necesario */
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.nutricenter-desc {
+    width: 480px;
+}
+
+.education-container .education-first .row-element {
+    width: 32%;
+}
+
+.education-container .education-last {
+    justify-content: center;
+    column-gap: 40px;
+}
+
+.education-container .education-last .row-element, .salud-container .salud-last .row-element {
+    width: 30%;
+}
+
+.salud-icon {
+    background-image: url("../images/salud.webp");
+}
+
+.salud-container .salud-first, .salud-container .salud-last {
+    justify-content: center;
+}
+
+.salud-container .salud-first .row-element {
+    width: 32%;
+}
+
+.otros-container .final-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.otros-container .final-row p {
+    font-family: "Manrope";
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+
+.otros-container .final-row p:last-child {
+    margin-top: -20px;
+}
+
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    background: #228ccd;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer_contacto {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_contacto_social a {
+    font-size: 2.5rem;
+    color: white;
+    margin-right: 20px;
+}
+
+
+
+
+.footer_contacto_con a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.footer_logo {
+    width: 40%;
+}
+
+.footer_logo a img {
+    width: 8rem;
+    height: auto;
+}
+
+.copyright .content {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright__t1 {
+    font-size: 1.5rem;
+    color: white;
+}
+.copyright .content a {
+
+    font-size: 1.5rem;
+}
+.copyright__t1 a, 
+.copyright .content a {
+    color: #ffd800;
+    text-decoration: none;
+}
+[data-aos] {
+    opacity: 0;
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+  }
+  
+  [data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  [data-aos].aos-out {
+    opacity: 0;
+    transform: translateY(20px); /* Adjust based on your preference */
+  }
+
+
+
+@media (max-width: 1700px) {
+    .wave {
+        bottom: -30px;
+    }
+}
+/* Responsive styles */
+@media (max-width: 1479px) {
+
+    .hero p {
+        max-width: 90%;
+    }
+
+    .row {
+        align-items: center;
+        justify-content: center;
+    }
+    .row-element , .education-container .education-first .row-element, .education-container .education-last .row-element, .salud-container .salud-last .row-element,    .salud-container .salud-first .row-element  {
+        width: calc(32.333% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .nutricenter-element, .clinica {
+        padding-bottom: 40px;
+
+    }
+
+
+    .nutricenter-desc {
+        width: 90%;
+        
+    }
+
+    .navbar_op_menu {
+        display: block;
+    }
+
+    .navbar_op__el {
+        display: none;
+    }
+
+    .navbar_op__el.active {
+        display: block;
+        margin-right: 0;
+    }
+
+    .floating_link,
+    .floating_social__el {
+        font-size: 1rem;
+    }
+
+    .floating_social__el {
+        margin-right: 0.5rem;
+    }
+
+    .floating_close {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+@media (max-width: 1100px) {
+    .wave {
+        bottom: -40px;
+    }
+}
+
+@media (max-width: 900) {
+    .wave {
+        bottom: -60px;
+    }
+}
+@media (max-width: 767px) {
+    .wave {
+        bottom: -50px;
+    }
+    .hero h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        mix-blend-mode: overlay; /* using screen blend mode */
+    }
+    
+    .hero p {
+        font-family: "Manrope";
+        font-weight: 400;
+        margin-top: -70px;
+        font-size: 2.3rem;
+        max-width: 80%;
+        margin: auto;
+    }
+    .row-element , .education-container .education-first .row-element, .education-container .education-last .row-element, .salud-container .salud-last .row-element,.salud-container .salud-first .row-element {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        
+    }
+
+    .row-element picture img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .element-title {
+        font-size: 1.2rem;
+    }
+
+    .element-desc {
+        font-size: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .navbar_logo img {
+        height: 80%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media (max-width : 600px) {
+    .wave {
+        bottom: -60px;
+    }
+}
+
+@media (max-width: 550px) {
+    
+    .row-element , .education-container .education-first .row-element, .education-container .education-last .row-element, .salud-container .salud-last .row-element,     .salud-container .salud-first .row-element {
+        width: calc(100% - 10px);
+        margin-bottom: 20px;
+    }
+
+
+    .row-element picture img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .element-title {
+        font-size: 1.2rem;
+    }
+
+    .element-desc {
+        font-size: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+
+    .navbar_logo img {
+        height: 80%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .final-row p {
+        font-size: 2px;
+    }
+
+    
+
+    .footer_contacto {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0;
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer_contacto_con {
+        margin: 0;
+    }
+
+    .otros-container .final-row p {
+        max-width: 90%;
+        text-align: center;
+        font-size: 1.5rem;
+    
+    }
+
+
+}
