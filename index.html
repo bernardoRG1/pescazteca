@@ -22,7 +22,7 @@
             <div onclick="menu()" class="floating_close">
                 <i class="fa-solid fa-xmark"></i>
             </div>
-            <div class="content">
+            <div class="content" id="menu-mobile">
                 <a href="/nuestraflota.html" class="floating_link">NUESTRA FLOTA</a>
                 <a href="/sustentables.html" class="floating_link">SUSTENTABILIDAD</a>
                 <a href="/responsabilidad.html" class="floating_link">RESPONSABILIDAD SOCIAL</a>
@@ -396,7 +396,7 @@
                         <img src="./static/images/logos/RESOMAZ.webp" alt="">
                     </picture>
                     <p class="element-title">RESOMAZ</p>
-                    <p class="element-desc">Descuentos especiales en rayos x, <br> resonancia magnética, tomografia, ultrasonido, mastografia y laboratorios clinicos*</p>
+                    <p class="element-desc">Descuentos especiales en rayos x, <br> resonancia magnética, tomografia, ultrasonido, mastografía y laboratorios clinicos*</p>
                 </div>
 
                 <div class="row-element" data-aos="fade-up">
@@ -466,7 +466,7 @@
                         <img src="./static/images/logos/SPORTIME.webp" alt=""  data-aos="fade-up"> 
                     </picture>
                     <p class="element-title">SPORTKINES MAZATLAN</p>
-                    <p class="element-desc">precio preferencial a colaboradores y familiares <br> directos sesión de rehgit remote add origin https://github.com/bernardoRG1/pescazteca.gitabilitacion fisica $300</p>
+                    <p class="element-desc">precio preferencial a colaboradores y familiares <br> directos sesión de rehabilitación fisica $300</p>
                 </div>
 
                 <div class="row-element clinica" data-aos="fade-up">
@@ -518,7 +518,7 @@
                         <img src="./static/images/logos/WOOLWORTH.webp" alt="">
                     </picture>
                     <p class="element-title">WOOLWORTH</p>
-                    <p class="element-desc">10% de descuento en <br> tienda valido presentando el codigo QR</p>
+                    <p class="element-desc">10% de descuento en <br> tienda válido presentando el código QR</p>
                 </div>
             </div>
 
@@ -544,7 +544,7 @@
                         <img src="./static/images/logos/VIAGGIO.webp" alt="">
                     </picture>
                     <p class="element-title">HOTEL VIAGGIO</p>
-                    <p class="element-desc">Privilegios y tarifas especiales <br>Descuento válido con previa reservacion e identificandose con codigo corporativo CLUBCORF22</p>
+                    <p class="element-desc">Privílegios y tarifas especiales <br>Descuento válido con previa reservación e identificandose con codigo corporativo CLUBCORF22</p>
                 </div>
 
                 <div class="row-element" data-aos="fade-up">
@@ -552,7 +552,7 @@
                         <img src="./static/images/logos/REDPHONE.webp" alt="">
                     </picture>
                     <p class="element-title">REDPHONE</p>
-                    <p class="element-desc">Tarifas especiales en planes de telefonia, registrarse para que te contacten</p>
+                    <p class="element-desc">Tarifas especiales en planes de telefonía, registrarse para que te contacten</p>
                 </div>
             </div>
 
@@ -570,7 +570,7 @@
                         <img src="./static/images/logos/OSEL.webp" alt="">
                     </picture>
                     <p class="element-title">PINTURAS OSEL DE OCCIDENTE</p>
-                    <p class="element-desc">10% de descuento en toda la linea de pinturas vinilicas: selladores, esmaltes. <br> Ubicados en Amistad #1174 Col. Lopez Mateos</p>
+                    <p class="element-desc">10% de descuento en toda la línea de pinturas vinilicas: selladores, esmaltes. <br> Ubicados en Amistad #1174 Col. Lopez Mateos</p>
                 </div>
 
                 <div class="row-element" data-aos="fade-up">
@@ -661,5 +661,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </script>
 
+<script>
+    function menu() {
+    fmenu.classList.toggle("active")
+    }
+    const fmenu = document.getElementById("floating_menu");
+    fmenu.style.opacity = "1";
 
+</script>
 </html>
